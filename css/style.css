@@ -1,0 +1,134 @@
+/* Step 1 */
+/* #logo{
+    0% {top: 0px;}
+    100% {top: 200px;}
+} */
+/* Step 2 */
+
+/* Edit the body element to use the Poppins font 
+(using Google fonts) with serif as a backup.
+It should also use the image “concrete_seamless.png” 
+as a background-image with a 
+backup color of #f1f1f1. */
+
+body{
+    font-family: 'Poppins',serif;
+    background-image: url('../images/concrete_seamless.png');
+    background-color: #f1f1f1;
+    
+}
+/* Step 3 */
+header{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+/* Step 4 */
+.nav_links{
+    display:flex;
+    flex-direction: column;
+}
+
+/* Step 5 */
+a:link{
+    color: #0000ff;
+}
+a:visited {
+    color:#0000ff;
+ }
+/* Step 6 */
+.card > header{
+    background-color: #288088;
+    border: 2px solid #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+/* Step 7 */
+.card{
+    flex-basis: 450px;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+/* Step 8 */
+.pricing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Step 9 */
+#image1, #image2,#image3,#image4,#image5{
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+/* Step 10 */
+.gallery{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 900px) {
+
+/* Step 11*/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_links{
+    display: flex;
+    flex-direction: row;/* Conductor we have a problem*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Step 12*/
+.pricing,.card{
+    justify-content: center;
+    flex-basis: 275px;
+    align-items: center;
+}
+/* Step 13*/
+}
+/* Step 14 */
+@media screen and (prefers-reduced-motion: reduce){
+    #logo{
+        /* class or id? */
+        display: flex;
+    }
+}
+/* Step 15 */
+/* Step 16 */
+@media print and (orientation: portrait) {
+    body{
+        font-style: Arial, Helvetica;
+        background-image: none;
+    }
+
+/* Step 17 */
+.nav_links{
+    justify-content: space-evenly;
+}
+/* Step 18 */
+.pricing{
+    align-items: end;
+}
+/* Step 19 */
+.card{
+    border:2px solid #45ADDD;
+    flex-basis: 325px;
+}
+/* Step 20 */
+.gallery{
+    display: hidden;
+}
+/* Step 21 */
+}
