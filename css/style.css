@@ -114,6 +114,7 @@ header{
     #logo{
         /* class or id? */
         display: flex;
+        animation:none;
     }
 }
 /* Step 15 */
