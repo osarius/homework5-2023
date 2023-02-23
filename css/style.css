@@ -32,7 +32,7 @@ header{
 /* Step 4 */
 .nav_links{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 /* Step 5 */
@@ -87,7 +87,6 @@ header:nth-child(2n){
     width: 100%;
 }
 header{
-    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -112,8 +111,6 @@ header{
 /* Step 14 */
 @media screen and (prefers-reduced-motion: reduce){
     #logo{
-        /* class or id? */
-        display: flex;
         animation:none;
     }
 }
@@ -132,14 +129,24 @@ nav{
     width:100%;
 }
 .nav_links{
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 /* Step 18 */
+#logo{
+    animation:none;
+}
+header{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
 .pricing{
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
+    align-items: flex-end;
     justify-content: flex-end;
-    flex-direction: column;
+    flex-direction: row;
 }
 /* Step 19 */
 .card{
